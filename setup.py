@@ -15,7 +15,7 @@ with open('README.md') as f:
     DESCRIPTION = f.read()
 
 setup(
-    name='pytorch_ext',
+    name='pytorchext',
     version=VERSION,
     author='3jane.com',
     author_email='contact@3jane.com',
@@ -29,6 +29,6 @@ setup(
         'Operating System :: OS Independent',
     ],
     python_requires='>=3.6',
-    py_modules=['pytorch_ext'],
+    py_modules=['pytorchext'],
     install_requires=parse_reqs('requirements.txt'),
 )
