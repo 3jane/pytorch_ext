@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 from pip._internal.network.session import PipSession
 from pip._internal.req import parse_requirements
 
@@ -29,6 +29,6 @@ setup(
         'Operating System :: OS Independent',
     ],
     python_requires='>=3.6',
-    py_modules=['pytorchext'],
+    packages=find_packages(include=["pytorchext*"]),
     install_requires=parse_reqs('requirements.txt'),
 )
